@@ -18,5 +18,13 @@ function isDisplayToggle() {
   } else {
     pEl.style.display = "none"; // 숨기기
   }
-  
 }
+
+function removeAllA() {
+  const childNodes = document.body.childNodes;
+  childNodes.forEach((node) => {
+    if (node.nodeName === "A") node.parentNode.removeChild(node);
+  });
+}
+
+
