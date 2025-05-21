@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>웹화면구현 250521</title>
-</head>
-<body>
-  <p>text 1</p>
-  <a href="https://www.gilbut.co.kr">길벗</a>
-  <a href="https://www.sucoding.kr/">수코딩</a>
-  
-  <button onclick="isDisplayToggle()">P 태그 삭제</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹화면구현 250521</title>
+  </head>
+  <body>
+    <p>text 1</p>
+    <a href="https://www.gilbut.co.kr">길벗</a>
+    <a href="https://www.sucoding.kr/">수코딩</a>
 
-  <script src="/js/main.js"></script>
-</body>
+    <button onclick="isDisplayToggle()">P 태그 삭제</button>
+    <button onclick="removeAllA()">모든 a 태그 삭제</button>
+
+    <h1>form</h1>
+    <form
+      name="frm1"
+      style="
+        border: 1px solid black;
+        padding: 10px;
+        width: 300px;
+        font-size: 1.3rem;
+      "
+    >
+      <div>
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="uname" />
+      </div>
+      <div>
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age" />
+      </div>
+      <div>
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+      </div>
+      <button type="submit">전송</button>
+    </form>
+
+    <script src="/js/main.js"></script>
+  </body>
 </html>
