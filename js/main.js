@@ -50,12 +50,22 @@ inputAge.addEventListener("blur", () => {
 // };
 
 const btnEl = document.querySelector("#btn");
-btnEl.addEventListener("click", function() {
-  if(this.style.backgroundColor === "red") {
+btnEl.addEventListener("click", function () {
+  if (this.style.backgroundColor === "red") {
     this.style.backgroundColor = "blue";
     this.style.color = "white";
-  }
-  else {
+  } else {
     this.style.backgroundColor = "red";
   }
+});
+
+const pEls = document.querySelectorAll("p");
+pEls.forEach((el) => {
+  el.addEventListener("click", function () {
+    if (this.style.color === "red") {
+      this.style.color = "black";
+    } else {
+      this.style.color = "red";
+    }
+  });
 });
