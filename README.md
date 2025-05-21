@@ -36,5 +36,5 @@
 ├── js/
 │   └── main.js                 # JavaScript 로직
 ├── index.html                  # 메인 HTML 페이지
-└── README.md                   # 현재 문서
+└── README.md                   # 수업에서 학습한 내용 정리
 ```
