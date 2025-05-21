@@ -27,4 +27,35 @@ function removeAllA() {
   });
 }
 
+function focusEvent() {
+  console.log("focus on");
+}
+function blurEvent() {
+  console.log("focus out");
+}
 
+const inputAge = document.querySelector("#age");
+inputAge.addEventListener("focus", () => {
+  console.log("Age focus on");
+});
+inputAge.addEventListener("blur", () => {
+  console.log("Age focus out");
+});
+
+// inputAge.onfocus = () => {
+//   console.log("Age focus on");
+// };
+// inputAge.onblur = () => {
+//   console.log("Age focus out");
+// };
+
+const btnEl = document.querySelector("#btn");
+btnEl.addEventListener("click", function() {
+  if(this.style.backgroundColor === "red") {
+    this.style.backgroundColor = "blue";
+    this.style.color = "white";
+  }
+  else {
+    this.style.backgroundColor = "red";
+  }
+});
